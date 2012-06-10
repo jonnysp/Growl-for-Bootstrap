@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Growl for Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+
+  </head>
+
+  <body>
+
+
+	<div class="container">
+    
+    <div class="row">
+    
+            <div class="span8 offset4">
+        
+        <div class="btn-group">
+        
+        		<a id="alerttoplef" class="btn">error</a>
+                <a id="successtoplef" class="btn">success</a>
+                <a id="warningtoplef" class="btn">warning</a>
+                <a id="infotoplef" class="btn">info</a>
+        </div>
+         </div>
+            
+        <div class="span8 offset4">
+        
+        <div class="btn-group">
+        
+        		<a id="alertbtnlef" class="btn">error</a>
+                <a id="successbtnlef" class="btn">success</a>
+                <a id="warningbtnlef" class="btn">warning</a>
+                <a id="infobtnlef" class="btn">info</a>
+        </div>
+         </div>
+    
+    
+ 	       <div class="span8 offset4">
+        <div class="btn-group">
+        		<a id="alerttoprg" class="btn">error</a>
+                <a id="successtoprg" class="btn">success</a>
+                <a id="warningtoprg" class="btn">warning</a>
+                <a id="infotoprg" class="btn">info</a>
+        </div>
+        
+        </div>  	
+        
+        
+        
+        <div class="span8 offset4">
+        
+        <div class="btn-group">
+        
+        		<a id="alertbtnrg" class="btn">error</a>
+                <a id="successbtnrg" class="btn">success</a>
+                <a id="warningbtnrg" class="btn">warning</a>
+                <a id="infobtnrg" class="btn">info</a>
+        </div>
+         </div>
+         
+         
+         
+ 
+    
+    
+    </div>
+ 
+    </div>
+ 
+
+
+    <script src="js/jquery-1.7.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/growl.js"></script>
+    
+    
+    <script>
+    $(document).ready(function(){
+		
+		
+		//--------------
+		$('#alerttoplef').click(function(e) {
+		   $.growl('This is a ERROR message!',{type:'error',position:'topleft'});
+        });
+		
+		$('#successtoplef').click(function(e) {
+		   $.growl('This is a SUCCESS message!',{type:'success',position:'topleft'});
+        });
+		
+		$('#warningtoplef').click(function(e) {
+		   $.growl('This is a WARNING message!',{type:'warning',position:'topleft'});
+        });
+		
+		$('#infotoplef').click(function(e) {
+		   $.growl('This is a INFO message!',{type:'info',position:'topleft'});
+        });
+		
+		
+		//--------------
+		$('#alerttoprg').click(function(e) {
+		   $.growl('This is a ERROR message!',{type:'error',position:'topright'});
+        });
+		
+		$('#successtoprg').click(function(e) {
+		   $.growl('This is a SUCCESS message!',{type:'success',position:'topright'});
+        });
+		
+		$('#warningtoprg').click(function(e) {
+		   $.growl('This is a WARNING message!',{type:'warning',position:'topright'});
+        });
+		
+		$('#infotoprg').click(function(e) {
+		   $.growl('This is a INFO message!',{type:'info',position:'topright'});
+        });
+		
+		
+		
+		$('#alertbtnrg').click(function(e) {
+		   $.growl('This is a ERROR message!',{type:'error',position:'bottomright'});
+        });
+		
+		$('#successbtnrg').click(function(e) {
+		   $.growl('This is a SUCCESS message!',{type:'success',position:'bottomright'});
+        });
+		
+		$('#warningbtnrg').click(function(e) {
+		   $.growl('This is a WARNING message!',{type:'warning',position:'bottomright'});
+        });
+		
+		$('#infobtnrg').click(function(e) {
+		   $.growl('This is a INFO message!',{type:'info',position:'bottomright'});
+        });
+		
+		
+		
+		$('#alertbtnlef').click(function(e) {
+		   $.growl('This is a ERROR message!',{type:'error',position:'bottomleft'});
+        });
+		
+		$('#successbtnlef').click(function(e) {
+		   $.growl('This is a SUCCESS message!',{type:'success',position:'bottomleft'});
+        });
+		
+		$('#warningbtnlef').click(function(e) {
+		   $.growl('This is a WARNING message!',{type:'warning',position:'bottomleft'});
+        });
+		
+		$('#infobtnlef').click(function(e) {
+		   $.growl('This is a INFO message!',{type:'info',position:'bottomleft'});
+        });
+		
+		
+		
+	});
+    
+    
+    
+    
+    </script>
+    
+ 
+
+  </body>
+</html>
