@@ -10,9 +10,9 @@ $.growl = function(message, options){
 	if (!$(growl).length) {
 		growl = $('<div id="growl'+options.position+'"></div>');
 		$('body').append(growl);
-		$(growl).css({'position':'fixed'}).addClass(options.class);
+		$(growl).css({'position':'fixed'}).css(pos[options.position]).addClass(options.class);
 	}
-    $(growl).css(pos[options.position]).prepend(alertbox);
+    $(growl).prepend(alertbox);
     $(alertbox).slideDown('slow').delay(options.timeout).slideUp('slow', function() { $(this).remove();if ($(growl).children().length <= 0){$(growl).remove();}});
 }
 })(jQuery);
